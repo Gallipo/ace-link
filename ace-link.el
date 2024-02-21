@@ -541,7 +541,7 @@ consider mu4e’s links."
       (ace-link--mu4e-action pt))))
 
 (declare-function shr-browse-url "shr")
-(declare-function mu4e~view-browse-url-from-binding "ext:mu4e-view")
+(declare-function mu4e--view-browse-url-from-binding "ext:mu4e-view")
 (declare-function mu4e~view-open-attach-from-binding "ext:mu4e-view")
 
 (defun ace-link--mu4e-action (pt)
