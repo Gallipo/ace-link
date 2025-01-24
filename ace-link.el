@@ -524,7 +524,7 @@ consider mu4e’s links."
 (defun ace-link-mu4e ()
   "Open a visible link in an `mu4e-view-mode' buffer."
   (interactive)
-  (if (bound-and-true-p mu4e-view-use-gnus)
+  (if (or (bound-and-true-p mu4e-view-use-gnus) (version<= "1.6" mu4e-mu-version))
       (ace-link-gnus)
     (let ((pt (avy-with ace-link-mu4e
                 (avy-process
